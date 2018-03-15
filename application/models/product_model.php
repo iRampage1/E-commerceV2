@@ -50,5 +50,7 @@ class Product_model extends CI_Model{
 	{
 		$this->db->delete('tblproduct',$param['condition']);
 	}
+
+	
 	
 }

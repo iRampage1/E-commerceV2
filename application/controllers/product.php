@@ -13,6 +13,7 @@ class Product extends CI_Controller {
 		$result=$this->product_model->index();
 		$data=array('productlist'=>$result);
 		$this->load->view("product",$data);
+		
 	}
 	function insert()
 	{
@@ -79,5 +80,6 @@ class Product extends CI_Controller {
 		$re=$this->product_model->delete($data);
 		$this->index();
 	}
+	
 
 }
